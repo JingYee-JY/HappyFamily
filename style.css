@@ -62,7 +62,7 @@ button{
 .timer-count{
     position: absolute;
     left: 5vmin;
-    top: 10vh;
+    top:8vh;
     margin: 1px;
     font-size: 3em;
     font-family: "Lilita One";
@@ -71,7 +71,7 @@ button{
 .score-count{
     position: absolute;
     right: 5vmin;
-    top: 10vh;
+    top: 8vh;
     margin: 1px;
     font-size: 3em;
     font-family: "Lilita One";
@@ -80,7 +80,6 @@ button{
 .text{
     position: relative;
     display: flex;
-    top: -2vh;
     width:87vmin;
     height: auto;
 }
