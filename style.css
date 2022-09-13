@@ -129,6 +129,7 @@ body{
     border: 0px;
     display: flex;
     width: 100%;
+    position: relative;
     justify-content: center;
 }
 #btn1 img,
@@ -139,15 +140,9 @@ body{
     box-sizing: border-box;
 }
 .overlay{
-    display: flex;
     position: absolute;
-    width: 42% !important;
-    height: auto;
-    margin-top: 148px;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 84% !important;
+    bottom: 8%;
 }
 
 .container{
@@ -252,8 +247,8 @@ body{
         height: 90%;
     }
     .overlay{
-    width: 43.5% !important;
-    margin-top: 280px;
+    width: 87% !important;
+    bottom: 3%;
     }
     .container{
         width: 50%;
@@ -296,7 +291,7 @@ body{
         height: 90%;
     }
     .overlay{
-        margin-top: 130px;
+        bottom: 4%;
     }
     .container{
         width: 70%;
