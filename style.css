@@ -1,5 +1,5 @@
 body{
-    background-color: #F8E7D4;
+    background-color: #E89CC3;
     width: 100%;
     height: 100%;
     display: flex;
@@ -10,6 +10,11 @@ body{
     padding: 0;
     margin: 0;
 }
+
+*{
+    font-family: 'Lilita One', cursive;
+}
+
 .start,
 .game,
 .wellDone,
@@ -20,17 +25,49 @@ body{
     justify-content: center;
     flex-direction: column;
     place-items: center;
-    background-color: #A29FCE;
     gap: 2vh;
     width: 100%;
     height: 100%;
 }
-button{
-    background-color: rgba(255, 255, 255,0);
+
+.startButton, .restart{
+    width: 100%;
+    position: relative;
+    align-self: center;
+    background-color: #86546D;
+    box-shadow: 0px 8px #5F3D4F;
     border: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5% 5%;
+    margin-bottom: 10%;
+    color: white;
+    font-size: 25px;
 }
+
+.startButton p, .startGame p {
+    margin: 3%;
+    margin-right: 6%;
+}
+
+.words{
+    font-size: 20px;
+    width: 100%;
+    margin: 0 !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+}
+
+.arrowHead{
+    margin-right: 10px;
+    max-width: 15px;
+    height: auto;
+}
+
 .btn{
     width: 25vh;
     height: 10vh;
@@ -39,11 +76,11 @@ button{
     position: relative;
     margin: 0%;
     padding: 0%;
-    width: 40vh;
+    width: 50%;
     height: auto;
 }
 .preview{
-    width: 100vmin;
+    width: 80%;
     height: auto;
 }
 .hide{
@@ -54,56 +91,52 @@ button{
     width: 7vh;
     height: auto;
 }
-.right{
-    position: absolute;
-    top: 1vh;
-    right: 1vh;
-}
-.timer-count{
-    position: absolute;
-    left: 5vmin;
-    top:8vh;
-    margin: 1px;
-    font-size: 3em;
-    font-family: "Lilita One";
-    color: #4E2BAB;
-}
-.score-count{
-    position: absolute;
-    right: 5vmin;
-    top: 8vh;
-    margin: 1px;
-    font-size: 3em;
-    font-family: "Lilita One";
-    color: #D1129B;
-}
-.text{
-    position: relative;
+
+.top{
+    width: 100%;
+    height: 10%;
+    background-color: white;
     display: flex;
-    width:87vmin;
-    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer-count, .score-count{
+    font-size: 40px;
+    margin: 0px 10px;
+    color: #A29FCE;
+}
+.text p{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
 }
 .options{
     position: relative;
     display: grid;
-    gap: 3vh;
-    grid-template-columns: repeat(2, 21vh);
-    grid-template-rows: repeat(2, 30vh);
-    width: 45vh;
-    height:55vh;
+    gap: 3%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 45%);
+    width: 90%;
+    height:80%;
 }
-.btn1,
-.btn2,
-.btn3,
-.btn4{
+#btn1,
+#btn2,
+#btn3,
+#btn4{
+    background-color: transparent;
+    border: 0px;
     display: flex;
-    width: 21vh;
-    height: 30vh;
+    width: 100%;
     justify-content: center;
 }
-img{
-    width: 21vh;
-    height: 30vh;
+#btn1 img,
+#btn2 img,
+#btn3 img,
+#btn4 img{
+    width: 100%;
+    box-sizing: border-box;
 }
 .overlay{
     display: flex;
@@ -142,4 +175,13 @@ img{
     justify-content: center;
     align-items: center;
     font-family: "Lilita One";
+}
+
+  /*mobile*/
+  @media screen and (max-width: 767px){
+    .startButton, .startGame,.next, .restart {
+    width: calc(100% - 70px);
+    justify-content: center;
+    align-items: center;
+    }
 }
