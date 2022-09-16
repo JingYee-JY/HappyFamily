@@ -59,7 +59,7 @@ startButton.addEventListener("click", () => {
     start.classList.add("hide")
     game.classList.remove("hide")
     startGame = true
-    time = 30
+    time = 100
     timerCount.innerHTML = `${time} s`;
     score = 0
     Question()
@@ -259,7 +259,7 @@ function updateCountDown(){
         scoreCount.innerHTML = `${score} pt`;
         if(time == 0){
             startGame = false
-            if(score >= 30){
+            if(score >= 100){
                 game.classList.add("hide")
                 wellDone.classList.remove("hide")
                 resultScoreCount.forEach(function(item){
