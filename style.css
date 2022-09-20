@@ -291,6 +291,7 @@ body{
     }
     .startButton,.playAgain,.home{
         max-width: 250px;
+        padding: 3% 2.5%;
     }
     .preview{
         width: 60%;
