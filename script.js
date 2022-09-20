@@ -59,7 +59,7 @@ startButton.addEventListener("click", () => {
     start.classList.add("hide")
     game.classList.remove("hide")
     startGame = true
-    time = 100
+    time = 70
     timerCount.innerHTML = `${time} s`;
     score = 0
     Question()
@@ -246,10 +246,18 @@ playAgain.forEach((btn) => {
     final.classList.add("hide")
     game.classList.remove("hide")
     startGame = true
-    time = 30
+    time = 70
     timerCount.innerHTML = `${time} s`;
     score = 0
     Question()
+})
+})
+
+home.forEach((btn) => {
+    btn.addEventListener("click", () => {
+    wellDone.classList.add("hide")
+    final.classList.add("hide")
+    start.classList.remove("hide")
 })
 })
 

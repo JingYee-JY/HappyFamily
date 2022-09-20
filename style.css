@@ -102,6 +102,10 @@ body{
     margin: 0px 10px;
     color: #A29FCE;
 }
+.instruction{
+    width: 50%;
+    text-align: center;
+}
 .text p{
     text-align: center;
     margin: 0 auto;
@@ -231,6 +235,10 @@ body{
         font-size: 60px;
         margin: 20px 20px;
         color: #A29FCE;
+    }
+    .instruction{
+        width: 50%;
+        font-size: 30px;
     }
     .text p{
         font-size: 50px;
