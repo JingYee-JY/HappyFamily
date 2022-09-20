@@ -30,7 +30,7 @@ body{
     height: 100%;
 }
 
-.startButton, .playAgain{
+.startButton, .playAgain, .home{
     width: 100%;
     position: relative;
     align-self: center;
@@ -42,9 +42,14 @@ body{
     text-decoration: none;
     border-radius: 10px;
     padding: 5% 5%;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     color: white;
     font-size: 25px;
+}
+
+.home{
+    background-color: #5F3D4F;
+    box-shadow: 0px 8px #86546D;
 }
 
 .startButton p, .startGame p {
@@ -59,7 +64,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .arrowHead{
@@ -74,6 +79,9 @@ body{
     padding: 0%;
     width: 50%;
     height: auto;
+}
+.final .title{
+    width: 40%;
 }
 .preview{
     width: 80%;
@@ -160,7 +168,7 @@ body{
     text-decoration: none;
     border-radius: 10px;
     padding: 5% 5%;
-    margin: 50px auto;
+    margin: 30px auto;
     color: white;
     font-size: 25px;
 }
@@ -204,7 +212,7 @@ body{
 
   /*mobile*/
   @media screen and (max-width: 767px){
-    .startButton, .playAgain {
+    .startButton, .playAgain, .home {
     width: calc(100% - 70px);
     justify-content: center;
     align-items: center;
@@ -223,7 +231,7 @@ body{
     .title{
         width: 40%;
     }
-    .startButton,.playAgain{
+    .startButton,.playAgain, .home{
         padding: 2.5%;
         max-width: 300px;
     }
@@ -255,7 +263,7 @@ body{
     bottom: 3%;
     }
     .container{
-        width: 50%;
+        width: 40%;
         height: 30%;
     }
     .encourage{
@@ -281,7 +289,7 @@ body{
     .final{
         position: unset;
     }
-    .startButton,.playAgain{
+    .startButton,.playAgain,.home{
         max-width: 250px;
     }
     .preview{
@@ -299,17 +307,17 @@ body{
     }
     .container{
         width: 70%;
-        height: 40%;
+        height: 35%;
         margin: 10px auto;
     }
     .encourage{
-        font-size: 40px;
+        font-size: 30px;
     }
     .point{
         font-size: 25px;
     }
     .result-score-count{
-        font-size: 45px;
+        font-size: 35px;
     }
     .playAgain{
         margin-bottom: 5px;

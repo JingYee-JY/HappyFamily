@@ -10,6 +10,7 @@ const scoreCount = document.querySelector(".score-count");
 const final = document.querySelector(".final");
 const wellDone = document.querySelector(".wellDone");
 const playAgain = document.querySelectorAll(".playAgain");
+const home = document.querySelectorAll(".home");
 const resultScoreCount = document.querySelectorAll(".result-score-count");
 let startGame;
 let time;
