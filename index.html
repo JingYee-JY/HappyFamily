@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable =no">
     <title>Happy Family</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
@@ -21,7 +21,7 @@
     <div class="game hide">
         <div class="top">
             <p class="timer-count">00 s</p>
-            <p class="instruction">Find as many odd one out as you can before the time is up.</p>
+            <p class="instruction">Find as many odd ones out as you can before time is up.</p>
             <p class="score-count"><b>0 pt</b></p>
     </div>
     <div class="text">
@@ -41,7 +41,7 @@
             <div class="container">
                 <img src="./img/eyes.png">
                 <p class="encourage">You got a keen eye</p>
-                <p class="point">Total Points:</p>
+                <p class="point">Your score</p>
                 <div class="result-score-count"></div>
             </div>  
             <button class="playAgain">
@@ -52,17 +52,17 @@
             </button>
         </div>
         <div class="final hide">
-            <img class="title" src="./img/title.png">
+            <img class="title endTitle" src="./img/title.png">
             <div class="container">
                 <img src="./img/closer.png">
                 <p class="encourage">Look closer</p>
-                <p class="point">Total Points:</p>
+                <p class="point">Your score</p>
                 <p class="result-score-count"></p>
             </div>
             <button class="playAgain">
                 <p class="words"><img src="./img/restart.png" class="arrowHead">Play again</p>
             </button>
-            <button class="home">
+            <button class="home" onclick="window.location.href='https://gimme.sg/activations/dementia/';">
                 <p class="words"><img src="./img/home.png" class="arrowHead">Back to home</p>
             </button>
         </div>

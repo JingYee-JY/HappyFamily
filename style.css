@@ -106,12 +106,18 @@ body{
 }
 
 .timer-count, .score-count{
-    font-size: 40px;
+    flex:2;
+    font-size: 30px;
     margin: 0px 10px;
     color: #A29FCE;
 }
+
+.score-count{
+    text-align: right;
+}
 .instruction{
-    width: 50%;
+    flex:6;
+    font-size: 20px;
     text-align: center;
 }
 .text p{
@@ -213,7 +219,7 @@ body{
   /*mobile*/
   @media screen and (max-width: 767px){
     .startButton, .playAgain, .home {
-    width: calc(100% - 70px);
+    width: calc(100% - 40px);
     justify-content: center;
     align-items: center;
     }
@@ -224,7 +230,7 @@ body{
     body{
       width: 100%;
     }
-    .start, .howToPlay, .game,.final{
+    .start, .howToPlay, .game,.final,.wellDone{
         max-width: 820px;
         margin: 0 auto;
     }
@@ -240,12 +246,11 @@ body{
         width: 80%;
     }
     .timer-count, .score-count{
-        font-size: 60px;
+        font-size: 50px;
         margin: 20px 20px;
         color: #A29FCE;
     }
     .instruction{
-        width: 50%;
         font-size: 30px;
     }
     .text p{
@@ -282,11 +287,11 @@ body{
     body{
       width: 100%;
     }
-    .start, .howToPlay, .game,.final{
+    .start, .howToPlay, .game,.final, .wellDone{
         max-width: 400px;
         margin: 0 auto;
     }
-    .final{
+    .final, .wellDone{
         position: unset;
     }
     .startButton,.playAgain,.home{
@@ -324,3 +329,9 @@ body{
         margin-bottom: 5px;
     }
 }
+
+@media screen and (max-width:767px){
+    .endTitle {
+      display: none;
+    }
+  }
