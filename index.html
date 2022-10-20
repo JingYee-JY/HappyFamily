@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable =no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <title>Happy Family</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
@@ -21,18 +21,22 @@
     <div class="game hide">
         <div class="top">
             <p class="timer-count">00 s</p>
-            <p class="instruction">Find as many odd ones out as you can before time is up.</p>
             <p class="score-count"><b>0 pt</b></p>
     </div>
     <div class="text">
-        <p>Which one is from</p>
-        <p>another family?</p>
+        <p>Choose the odd one out</p>
     </div>
     <div class="options">
-        <button id="btn1">0</button>
-        <button id="btn2">0</button>
-        <button id="btn3">0</button>
-        <button id="btn4">0</button>
+        <img class="btn1">
+        <img class="btn2">
+        <img class="btn3">
+        <img class="btn4">
+    </div>
+</div>
+<div class="popUp hide">
+    <div class="pop">
+        <img class="picture">
+        <p class="inform"></p>
     </div>
 </div>
     <div class="cover">
@@ -40,7 +44,7 @@
             <img class="title" src="./img/title.png">
             <div class="container">
                 <img src="./img/eyes.png">
-                <p class="encourage">You got a keen eye</p>
+                <p class="encourage">Good job</p>
                 <p class="point">Your score</p>
                 <div class="result-score-count"></div>
             </div>  
@@ -62,10 +66,13 @@
             <button class="playAgain">
                 <p class="words"><img src="./img/restart.png" class="arrowHead">Play again</p>
             </button>
-            <button class="home" onclick="window.location.href='https://gimme.sg/activations/dementia/';">
+            <button class="home">
                 <p class="words"><img src="./img/home.png" class="arrowHead">Back to home</p>
             </button>
         </div>
     </div>
+    <audio id="click" src="sound/click.wav"></audio>
+    <audio id="completed" src="./sound/completed.wav"></audio>
+    <audio id="clap" src="./sound/clap.wav"></audio>
 </body>
 </html>
