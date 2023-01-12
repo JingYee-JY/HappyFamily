@@ -59,23 +59,29 @@ body{
 
 .startButton:active,.playAgain:active,.home:active{
     animation: animate 0.2s;
+    -webkit-animation: animate 0.2s;
 }
 
 @keyframes animate{
     0%{
         transform: rotate(0deg) translateX(0px);
+        -webkit-transform: rotate(0deg) translateX(0px);
     }
     25%{
         transform: rotate(-20deg) translateX(-10px);
+        -webkit-transform: rotate(-20deg) translateX(-10px);
     }
     50%{
         transform: rotate(0deg) translateX(0px);
+        -webkit-transform: rotate(0deg) translateX(0px);
     }
     75%{
         transform: rotate(20deg) translateX(10px);
+        -webkit-transform: rotate(20deg) translateX(10px);
     }
     100%{
         transform: rotate(0deg) translateX(0px);
+        -webkit-transform: rotate(0deg) translateX(0px);
     }
 }
 

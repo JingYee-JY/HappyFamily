@@ -1,0 +1,108 @@
+/*GamePage*/
+.gamePage{
+    gap: 5px;
+}
+
+.top{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-between;*/
+}
+
+.score, 
+.question{
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: var(--third);
+}
+
+.score-count,
+.question-count{
+    font-size: 30px;
+    padding: 5px 20px;
+}
+
+.point{
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: var(--secondary);
+}
+
+.options{
+    display: grid;
+    width: 90%;
+    gap: 20px;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+}
+
+.choiceButton{
+    width: 100%;
+    height: auto;
+}
+
+.choiceMark{
+    margin-top: 20px;
+    background-color: white;
+    width: 90%;
+    font-size: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.wrong{
+    border-radius: 10px;
+    outline: 10px solid var(--secondary);
+    outline-offset: -10px;
+}
+
+.correct{
+    border-radius: 10px;
+    outline: 10px solid var(--fifth);
+    outline-offset: -10px;
+}
+
+/*ipad*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /*GamePage*/
+    .questionNumber {
+        margin-top: 30px;
+        font-size: 60px;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+
+    .options {
+        width: 65%;
+    }
+
+    /*PopUp*/
+    .mark {
+        margin-bottom: -50px;
+    }
+
+    .background{
+        font-size: 50px;
+        padding: 40px;
+    }
+
+    .words{
+        font-size: 100px;
+    }
+
+    .next {
+        margin-top: -80px;
+    }
+}
