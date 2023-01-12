@@ -75,34 +75,32 @@
 /*ipad*/
 @media screen and (min-width:768px) and (max-width:1023px) {
     /*GamePage*/
-    .questionNumber {
-        margin-top: 30px;
+    .score-count, .question-count{
         font-size: 60px;
     }
 
-    .text {
-        font-size: 50px;
-    }
-
     .options {
-        width: 65%;
+        width: 80%;
     }
 
-    /*PopUp*/
-    .mark {
-        margin-bottom: -50px;
+    .choiceMark {
+        margin-top: 20px;
+        background-color: white;
+        width: 80%;
+        font-size: 80px;
+        border-radius: 20px;
+        text-align: center;
     }
-
-    .background{
-        font-size: 50px;
-        padding: 40px;
+    
+    .wrong{
+        border-radius: 10px;
+        outline: 20px solid var(--secondary);
+        outline-offset: -20px;
     }
-
-    .words{
-        font-size: 100px;
-    }
-
-    .next {
-        margin-top: -80px;
+    
+    .correct{
+        border-radius: 10px;
+        outline: 20px solid var(--fifth);
+        outline-offset: -20px;
     }
 }
